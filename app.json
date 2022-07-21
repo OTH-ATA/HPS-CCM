@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "CreditCardsManagement",
+    "slug": "CreditCardsManagement",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
