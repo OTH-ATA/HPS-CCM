@@ -1,0 +1,1 @@
+sdk.dir=C:\Users\bugat\AppData\Local\Android\Sdk
