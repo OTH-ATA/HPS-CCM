@@ -7,6 +7,9 @@ import {
 } from "react-native";
 import LoginBackground from '../../../assets/Images/LoginBackground.jpg';
 import { CreditCardInput, LiteCreditCardInput } from "react-native-credit-card-input"; // 0.3.3
+import {FAB} from 'react-native-elements';
+import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const s = StyleSheet.create({
   container: {
@@ -37,11 +40,18 @@ Title: {
     marginTop: 130,
     left: '18%',
 },
+but:{
+  bottom: -70,
+  justifyContent: "center",
+  alignSelf: 'center',
+}
+
 });
 
 const USE_LITE_CREDIT_CARD_INPUT = false;
 
 export default class Example extends Component {
+  
   _onChange = formData => {
     /* eslint no-console: 0 */
     console.log(JSON.stringify(formData, null, " "));
@@ -51,9 +61,11 @@ export default class Example extends Component {
     /* eslint no-console: 0 */
     console.log(field);
   };
-
+  
   render() {
+    
     return (
+      
     <ImageBackground source={LoginBackground}  style={s.image}>
     <Text style={s.Title}>Add New Credit Card</Text>
       <View style={s.container}>
@@ -85,6 +97,14 @@ export default class Example extends Component {
                 onFocus={this._onFocus}
                 onChange={this._onChange} />)
         }
+        <FAB 
+          title="ADD"
+          size="small"
+          color='orange'
+          icon={<Ionicons name="add-circle" size={24} color="white" /> } 
+          style={s.but}
+          />
+          
       </View>
       </ImageBackground>
     );

@@ -1,3 +1,4 @@
+
 import { View, Text } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
@@ -8,6 +9,16 @@ import SignUpScreen from '../screens/SignUpScreen';
 import ConfirmEmailScreen from '../screens/ConfirmEmailScreen';
 import NewPasswordScreen from '../screens/NewPasswordScreen';
 import HomeScreen from '../screens/HomeScreen';
+import AddCardScreen from '../screens/AddCardScreen'
+/*
+const Navigation=createStackNavigator(
+  {
+    SignInScreen: {screen:SignInScreen},
+    HomeScreen: {screen:HomeScreen},
+  }
+);
+export default createNativeStackNavigator(Navigation);
+*/
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +32,8 @@ const Navigation = () => {
         <Stack.Screen name="NewPassword" component={NewPasswordScreen} />
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="AddCard" component={AddCardScreen} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   )

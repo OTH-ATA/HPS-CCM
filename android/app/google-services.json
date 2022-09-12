@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "498111576490",
+    "project_id": "hps-ccm",
+    "storage_bucket": "hps-ccm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498111576490:android:a30847d271162ea43713d3",
+        "android_client_info": {
+          "package_name": "com.creditcardsmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498111576490-890lrujo97tfgdg07496rh7k3ca7goq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb4OkDh7JiL94KQCilQKmvizDEdHeqGEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498111576490-890lrujo97tfgdg07496rh7k3ca7goq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
